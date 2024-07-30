@@ -37,8 +37,8 @@ const Content = () => {
   }, []);
 
   return (
-    <div className="relative overflow-x-hidden box-border p-8">
-      <section className="h-screen flex flex-col justify-center text-white p-6 space-y-12">
+    <div className="relative overflow-x-hidden box-border p-8 text-white">
+      <section className="h-screen flex flex-col justify-center p-6 space-y-12">
         <h1 className="text-5xl max-w-3xl font-bold opacity-90 leading-normal">
           Welcome to the New York Recreational Cricket League
         </h1>
