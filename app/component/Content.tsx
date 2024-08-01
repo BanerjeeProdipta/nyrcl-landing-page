@@ -43,15 +43,17 @@ const Content = () => {
           Welcome to the New York Recreational Cricket League
         </h1>
         <p>
-          Join us to experience the thrill of cricket right in the heart of New
-          York City!
+          <span className="px-4 py-2">Join us</span> to experience the thrill of
+          cricket right in the heart of New York City!
         </p>
       </section>
 
       <div ref={triggerRef} className="flex h-screen overflow-x-hidden">
         <div ref={containerRef} className="flex">
-          <section className="horizontal-scroll h-screen w-screen  text-center border-r flex flex-col items-center justify-center p-6">
-            <h2 className="text-3xl mb-4">About the League</h2>
+          <section className="horizontal-scroll bg-white/10 h-screen w-screen  text-center border-r border-green-600 flex flex-col items-center justify-center p-6">
+            <h2 className="text-3xl mb-4 border-b-2 border-green-400">
+              About the League
+            </h2>
             <p className="max-w-xl">
               The New York Recreational Cricket League (NYRCL) is dedicated to
               promoting the sport of cricket among New Yorkers of all ages. We
@@ -60,8 +62,10 @@ const Content = () => {
             </p>
           </section>
 
-          <section className="horizontal-scroll h-screen w-screen  text-center border-r flex flex-col items-center justify-center p-6">
-            <h2 className="text-3xl mb-4">How to Join</h2>
+          <section className="horizontal-scroll bg-white/10 h-screen w-screen  text-center border-r border-green-600 flex flex-col items-center justify-center p-6">
+            <h2 className="text-3xl mb-4 border-b-2 border-green-400">
+              How to Join
+            </h2>
             <p className="max-w-xl">
               Interested in playing? We welcome players of all skill levels! To
               join, simply fill out our online registration form on our website,
@@ -69,8 +73,10 @@ const Content = () => {
             </p>
           </section>
 
-          <section className="horizontal-scroll h-screen w-screen  text-center border-r flex flex-col items-center justify-center p-6">
-            <h2 className="text-3xl mb-4">League Fees</h2>
+          <section className="horizontal-scroll bg-white/10 h-screen w-screen  text-center border-r border-green-600 flex flex-col items-center justify-center p-6">
+            <h2 className="text-3xl mb-4 border-b-2 border-green-400">
+              League Fees
+            </h2>
             <p className="max-w-xl">
               The registration fee for the league is $150 per player, which
               covers the entire season. This fee includes uniforms, equipment
@@ -78,8 +84,10 @@ const Content = () => {
             </p>
           </section>
 
-          <section className="horizontal-scroll h-screen w-screen  text-center flex flex-col items-center justify-center p-6">
-            <h2 className="text-3xl mb-4">Location of Games</h2>
+          <section className="horizontal-scroll bg-white/10 h-screen w-screen  text-center flex flex-col items-center justify-center p-6">
+            <h2 className="text-3xl mb-4 border-b-2 border-green-400">
+              Location of Games
+            </h2>
             <p className="max-w-xl">
               All games are held at the iconic Central Park Cricket Fields,
               located near the north end of Central Park, easily accessible via
@@ -91,7 +99,9 @@ const Content = () => {
 
       <section className="h-screen flex items-center justify-center p-6">
         <div className="p-6 w-1/2">
-          <h2 className="text-3xl mb-4">Season Schedule</h2>
+          <h2 className="text-3xl mb-4 border-b-2 border-green-400 max-w-xs">
+            Season Schedule
+          </h2>
           <p className="mb-4">
             The NYRCL season runs from April through September, with games
             typically held on weekends. Here is the schedule for the upcoming
@@ -112,7 +122,7 @@ const Content = () => {
         </div>
       </section>
 
-      <footer className="h-screen flex flex-col items-center justify-center text-white p-6">
+      <footer className="h-screen flex flex-col items-center justify-center bg-gradient-to-bl from-green-500 to-green-800 p-6">
         <h2 className="text-3xl mb-4">Contact Us: </h2>
         <p>Email: info@nyrcl.com | Phone: (555) 123-4567</p>
         <p>

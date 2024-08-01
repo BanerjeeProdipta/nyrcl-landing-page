@@ -1,10 +1,14 @@
 import React from 'react';
-import Scene from './component/BallScene';
 import Content from './component/Content';
+import dynamic from 'next/dynamic';
+
+const Scene = dynamic(() => import('./component/BallScene'), {
+  ssr: false,
+});
 
 const Home: React.FC = () => {
   return (
-    <main className="relative bg-gray-100 min-h-screen">
+    <main className="relative min-h-screen text-white">
       <div className="fixed inset-0 pointer-events-none z-0">
         <Scene />
       </div>
